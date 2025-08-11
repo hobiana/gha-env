@@ -5,7 +5,10 @@ const dbUser = process.env.MONGODB_USERNAME;
 const dbPassword = process.env.MONGODB_PASSWORD;
 const dbName = process.env.MONGODB_DB_NAME;
 
-console.log('process.env: ', process.env);
+console.log('clusterAddress: ', clusterAddress);
+console.log('dbUser: ', dbUser);
+console.log('dbPassword: ', dbPassword);
+console.log('dbName: ', dbName);
 
 const uri = `mongodb+srv://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrites=true&w=majority`;
 console.log('uri: ', uri);
